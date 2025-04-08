@@ -1,7 +1,6 @@
-# llvm-pass-skeleton
+# Valgrind clone
 
-A completely useless LLVM pass.
-It's for LLVM 17.
+Instruments each `malloc` and `free` call in a C program and prints the number of heap objects currently allocated.
 
 Build:
 
@@ -14,4 +13,4 @@ Build:
 
 Run:
 
-    $ clang -fpass-plugin=`echo build/skeleton/SkeletonPass.*` something.c
+    $ ./run.sh
